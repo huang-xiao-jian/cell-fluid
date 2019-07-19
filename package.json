@@ -1,0 +1,100 @@
+{
+  "name": "cell-fluid",
+  "version": "0.1.0",
+  "description": "A tiny input render function with payload form",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:huang-xiao-jian/cell-fluid.git"
+  },
+  "keywords": [
+    "react",
+    "format"
+  ],
+  "author": "huang.jian <hjj491229492@hotmail.com>",
+  "contributors": [
+    {
+      "name": "huang.jian",
+      "email": "hjj491229492@hotmail.com"
+    },
+    {
+      "name": "yang.yuncai",
+      "email": "383235388@qq.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huang-xiao-jian/cell-fluid/issues"
+  },
+  "homepage": "https://github.com/huang-xiao-jian/cell-fluid#README",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@coco-platform/jest-tools": "^0.3.0",
+    "@coco-platform/webpack-plugin-inject-external": "^0.7.2",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-hot-loader": "^4.1.0",
+    "@types/react-router-dom": "^4.3.1",
+    "antd": "3.20.2",
+    "autoprefixer": "^9.4.8",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
+    "coveralls": "^3.0.3",
+    "css-loader": "^3.0.0",
+    "cz-conventional-changelog": "2.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^4.0.0",
+    "fork-ts-checker-webpack-plugin": "^1.3.7",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.1",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.7.1",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "rxjs": "^6.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
