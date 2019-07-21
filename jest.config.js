@@ -1,15 +1,12 @@
 module.exports = {
   transform: {
     '\\.(ts|tsx|js|jsx)$': 'babel-jest',
-    '\\.(jpg|jpeg|png|giff|webp|svg)$':
-      '@coco-platform/jest-tools/lib/asset-transformer.js',
   },
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
   moduleDirectories: ['node_modules'],
-  moduleNameMapper: {
-    '\\.css$': '@coco-platform/jest-tools/lib/css-ignore.js',
-    '\\.pcss': '@coco-platform/jest-tools/lib/css-modules.js',
-  },
+  setupFilesAfterEnv: [
+    '@testing-library/react/cleanup-after-each',
+  ],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   coverageDirectory: 'coverage',
   coverageReporters: ['lcov', 'html'],
