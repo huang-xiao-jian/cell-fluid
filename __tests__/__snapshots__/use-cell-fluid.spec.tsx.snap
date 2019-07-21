@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useCellFluid hook should render with hook 1`] = `"<input data-testid=\\"fixture\\" value=\\"\\">"`;
+
+exports[`useCellFluid hook should render with hook 2`] = `"<input data-testid=\\"fixture\\" value=\\"1234 5\\">"`;
