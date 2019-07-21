@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Loading Component should render standard loading 1`] = `"<article class=\\"container\\"><div class=\\"spinner\\"><div class=\\"cube-blue\\"></div><div class=\\"cube-green\\"></div><div class=\\"cube-pink\\"></div><div class=\\"cube-yellow\\"></div><div class=\\"message\\">waiting...</div></div></article>"`;
