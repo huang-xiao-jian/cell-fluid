@@ -1,9 +1,20 @@
 {
   "name": "cell-fluid",
   "version": "0.1.0",
-  "description": "A tiny input render function with payload form",
+  "description": "React hook to transform any input component into formatted input",
+  "module": "./es/use-cell-fluid.js",
+  "types": "./native/use-cell-fluid.d.ts",
+  "files": [
+    "es",
+    "native"
+  ],
   "scripts": {
+    "prepublishOnly": "npm-run-all -s compile",
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline",
+    "precompile": "rm -rf native es",
+    "compile": "npm-run-all -s compile:*",
+    "compile:native": "NODE_ENV=production tsc --declaration --outDir native",
+    "compile:esm": "NODE_ENV=production babel src --source-maps --out-dir es --extensions '.js,.ts'",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
@@ -71,6 +82,7 @@
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.1",
     "jest": "^24.1.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0",
     "react-dom": "^16.8.6",
